@@ -1,0 +1,116 @@
+.card {
+  font-family: Montserrat, Arial, SansSerif;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  min-height: 400px;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  margin: 0;
+  padding: 0;
+
+  &__photo {
+    max-width: 220px;
+    min-height: 240px;
+    object-fit: contain;
+    object-position: center;
+    margin: 15px 0 54px;
+  }
+
+  &__info {
+    display: grid;
+    align-items: center;
+    grid-template-rows: auto;
+    grid-template-columns: 50% 1fr;
+    padding: 0 21px;
+    margin: 0 0 27px;
+    box-sizing: border-box;
+    min-height: 74px;
+    width: 100%;
+    justify-content: space-between;
+    align-content: space-between;
+    justify-items: stretch;
+  }
+
+  &__image-rate {
+    width: 23px;
+    height: 23px;
+  }
+
+  &__button-buy {
+    background-color: transparent;
+    border: none;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 21px;
+    color: #000;
+    text-align: right;
+    margin: 0 0 0 80px;
+    padding: 0;
+    opacity: 1;
+    transition: opacity 0.5s ease 0s;
+    width: 65px;
+
+    &_in-cart {
+      background-color: #41fa7c;
+      cursor: default;
+      opacity: 1;
+      color: white;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 21px;
+      width: 95px;
+      border-radius: 8px;
+      text-align: center;
+      margin: 0 0 0 58px;
+    }
+  }
+
+
+
+  &:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+
+  &__price {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 21px;
+    text-align: right;
+    align-items: center;
+    color: #FFA542;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__rate {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  &__rate-number {
+    margin: 0 0 0 10px;
+    padding: 0;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 21px;
+    color: #838383;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 21px;
+    color: #1C1C27;
+    margin: 0;
+    padding: 0;
+  }
+}
+

@@ -25,39 +25,6 @@
   "rules": {
     "@typescript-eslint/no-unused-vars": "warn",
     "prettier/prettier": ["warn", { "endOfLine": "auto" }],
-    "react-refresh/only-export-components": [
-      "warn",
-      { "allowConstantExport": true }
-    ],
-    "react/function-component-definition": [
-      "warn",
-      {
-        "namedComponents": "arrow-function",
-        "unnamedComponents": "arrow-function"
-      }
-    ],
-    "no-console": "warn",
-    "import/order": [
-      "warn",
-      {
-        "groups": [
-          "builtin",
-          "external",
-          "internal",
-          "parent",
-          "sibling",
-          "index",
-          "object",
-          "type"
-        ],
-        "pathGroups": [
-          {
-            "pattern": "./*.css",
-            "group": "sibling",
-            "position": "after"
-          }
-        ]
-      }
-    ]
+    "no-console": "warn"
   }
 }

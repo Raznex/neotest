@@ -1,38 +1,30 @@
-.App {
-  text-align: center;
+@import "../../layout/mixins";
+#root {
+  background-color: #EAEAEA;
+  @include flex-column-center
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.page {
+  background-color: #EAEAEA;
+  max-width: 1110px;
+  width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  margin: 0 100px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 1000px) {
+  .page {
+    margin: 0 60px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+
+@media screen and (max-width: 700px) {
+  .page {
+    margin: 0 20px;
   }
 }
